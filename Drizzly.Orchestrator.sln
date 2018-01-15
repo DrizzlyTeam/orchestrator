@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drizzly.Orchestrator", "Drizzly.Orchestrator\Drizzly.Orchestrator.csproj", "{014283BE-EDA9-4BA8-BD90-86AD03C751B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drizzly.Commons", "..\commons\Drizzly.Commons\Drizzly.Commons.csproj", "{1FB8D6BA-2FE6-402B-9291-C4069A34D832}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{014283BE-EDA9-4BA8-BD90-86AD03C751B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014283BE-EDA9-4BA8-BD90-86AD03C751B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014283BE-EDA9-4BA8-BD90-86AD03C751B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014283BE-EDA9-4BA8-BD90-86AD03C751B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB8D6BA-2FE6-402B-9291-C4069A34D832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB8D6BA-2FE6-402B-9291-C4069A34D832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB8D6BA-2FE6-402B-9291-C4069A34D832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB8D6BA-2FE6-402B-9291-C4069A34D832}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
