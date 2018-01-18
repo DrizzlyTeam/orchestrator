@@ -1,9 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Drizzly.Commons;
 using Drizzly.Orchestrator.Configs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using ResponseStatus = Drizzly.Commons.ResponseStatus;
 
@@ -32,7 +34,7 @@ namespace Drizzly.Orchestrator.Controllers
 
             var client = new RestClient(_configuration.EndPoints[service]);
             
-            var request = new RestRequest(value, Method.POST);
+            var request = new RestRequest(value, Method.GET);
 
             if (Request.HasFormContentType)
             {
@@ -51,7 +53,9 @@ namespace Drizzly.Orchestrator.Controllers
                     $"Service: {service}, Value: {value}");
             }
 
-            return Json(JsonConvert.DeserializeObject(response.Content)).ToUnifiedResult();
+            dynamic t = JObject.Parse(response.Content);
+            Console.WriteLine(t.Status);
+            return Json(JsonConvert.DeserializeObject(response.Content));
         }
     }
 }
